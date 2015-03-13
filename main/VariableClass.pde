@@ -1,7 +1,7 @@
 public class Variable extends Operator{
-  char value;
+  String value;
   
-  public Variable(char value){
+  public Variable(String value){
     this.value = value;
   }
    

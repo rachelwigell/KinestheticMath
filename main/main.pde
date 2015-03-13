@@ -6,8 +6,8 @@
     fill(0);
     
     //let's build the equation 3y + 2x = 8yx
-    Operator leftSide = new Addition(true, new Multiplication(true, new Constant(3), new Variable('y')), new Multiplication(true, new Constant(2), new Variable('x')));
-    Operator rightSide = new Multiplication(true, new Multiplication(true, new Constant(8), new Variable('y')), new Variable('x'));
+    Operator leftSide = new Addition(true, new Multiplication(true, new Constant(3), new Variable("y")), new Multiplication(true, new Constant(2), new Variable("x")));
+    Operator rightSide = new Multiplication(true, new Multiplication(true, new Constant(8), new Variable("y")), new Variable("x"));
     equation = new Equation(leftSide, rightSide);
   }
   

@@ -1,5 +1,5 @@
 public abstract class Operator{
-  char symbol;
+  String symbol;
   Operator left;
   Operator right;
 
