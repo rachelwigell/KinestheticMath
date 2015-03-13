@@ -12,7 +12,6 @@ public class Equation{
     equation += leftHandSide.printOperation();
     equation += " = ";
     equation += rightHandSide.printOperation();
-    System.out.println(equation);
     return equation;
   }
 }
