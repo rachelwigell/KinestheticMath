@@ -1,13 +1,17 @@
 public abstract class Operator{
-  String symbol;
-  Operator left;
-  Operator right;
+  ArrayList symbols; //String
+  ArrayList expressions; // Operator; expressions.size() == symbols.size() + 1
 
   public String printOperation(){
     String operation = "";
-    operation += left.printOperation();
-    operation += " " + symbol + " ";
-    operation += right.printOperation();
+    for(int i = 0; i < symbols.size(); i++){
+      Operator exp = (Operator) expressions.get(i);
+      operation += exp.printOperation();
+      String symbol = (String) symbols.get(i);
+      operation += symbol;
+    }
+    Operator exp = (Operator) expressions.get(expressions.size()-1);
+    operation += exp.printOperation();
     return operation;
   }
   
